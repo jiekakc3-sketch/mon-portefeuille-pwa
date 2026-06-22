@@ -6,9 +6,5 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/mon-portefeuille-pwa/',
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
-  },
+  base: "/mon-portefeuille-pwa",
 })
