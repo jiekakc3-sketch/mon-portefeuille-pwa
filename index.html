@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <link rel="manifest" href="/mon-portefeuille-pwa/manifest.json">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/mon-portefeuille-pwa/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/mon-portefeuille-pwa/assets/index-Cq0L1Mle.js"></script>
+    <link rel="stylesheet" crossorigin href="/mon-portefeuille-pwa/assets/index-tPnJwQAW.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registrato con successo! 🎉', reg))
+          .catch(err => console.error('Errore nella registrazione del Service Worker ❌', err));
+      });
+    }
+  </script>
+</body>
+</html>
